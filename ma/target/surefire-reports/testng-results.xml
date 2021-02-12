@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="881599" started-at="2021-02-12T13:15:41Z" finished-at="2021-02-12T13:30:23Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="881599" started-at="2021-02-12T13:15:41Z" finished-at="2021-02-12T13:30:23Z">
+      <class name="ma.Barnstable">
+        <test-method status="PASS" signature="passArgsCMD()[pri:0, instance:ma.Barnstable@703580bf]" name="passArgsCMD" is-config="true" duration-ms="16" started-at="2021-02-12T13:15:41Z" finished-at="2021-02-12T13:15:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passArgsCMD -->
+        <test-method status="PASS" signature="BarnstableTest()[pri:0, instance:ma.Barnstable@703580bf]" name="BarnstableTest" duration-ms="881548" started-at="2021-02-12T13:15:41Z" finished-at="2021-02-12T13:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BarnstableTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ma.Barnstable@703580bf]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-02-12T13:30:23Z" finished-at="2021-02-12T13:30:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BarnstableTest status=SUCCESS method=Barnstable.BarnstableTest()[pri:0, instance:ma.Barnstable@703580bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ma.Barnstable -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

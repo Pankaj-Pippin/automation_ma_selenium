@@ -1,0 +1,246 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ppn</groupId>
+	<artifactId>ma</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+
+
+		<dependency>
+
+			<groupId>org.seleniumhq.selenium</groupId>
+
+			<artifactId>selenium-java</artifactId>
+
+			<version>3.13.0</version>
+
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.testng</groupId>
+
+			<artifactId>testng</artifactId>
+
+			<version>6.14.3</version>
+
+			<scope>compile</scope>
+
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.apache.poi</groupId>
+
+			<artifactId>poi</artifactId>
+
+			<version>4.0.0</version>
+
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.apache.poi</groupId>
+
+			<artifactId>poi-ooxml</artifactId>
+
+			<version>4.0.0</version>
+
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+
+
+
+		<dependency>
+
+			<groupId>io.github.bonigarcia</groupId>
+
+			<artifactId>webdrivermanager</artifactId>
+
+			<version>3.8.0</version>
+
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.apache.poi</groupId>
+
+			<artifactId>poi-scratchpad</artifactId>
+
+			<version>4.0.0</version>
+
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.apache.poi</groupId>
+
+			<artifactId>poi-ooxml-schemas</artifactId>
+
+			<version>4.0.0</version>
+
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.apache.poi</groupId>
+
+			<artifactId>openxml4j</artifactId>
+
+			<version>1.0-beta</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itext7-core</artifactId>
+			<version>7.0.4</version>
+			<type>pom</type>
+		</dependency>
+
+		<!-- added on 13-01-2021 -->
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>2.3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>2.3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20180813</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<!-- copied till above -->
+
+		<dependency>
+			<groupId>com.github.yev</groupId>
+			<artifactId>screenshot</artifactId>
+			<version>0.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>1.5.3</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compile-plugin</artifactId>
+					<version>3.8.0</version>
+					<configuration>
+						<source>10</source>
+						<target>10</target>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M5</version>
+					<configuration>
+						<systemPropertyVariables>
+							<!-- <environment>${env.USER}</environment> -->
+							<OrderNo></OrderNo>
+							<Address1></Address1>
+							<Address2></Address2>
+							<City></City>
+							<State></State>
+							<County></County>
+							<ZipCode></ZipCode>
+
+							<BuyerName></BuyerName>
+							<CoBuyerName></CoBuyerName>
+							<CompanyName></CompanyName>
+						</systemPropertyVariables>
+
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+
+	</build>
+
+</project>
