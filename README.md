@@ -36,6 +36,8 @@ Config.properties file:
     PacerPW= <PACER Password>
     PacerUrl=<PACER URL>
 
+        Raaj
+
     //email to from credentials
     from = <mailid >
     password = <Password>
